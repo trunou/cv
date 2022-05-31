@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Aliaksei Trunou CV</title>
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <nav>
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#about" class="menu-link">About me</a></li>
+          <li class="menu-item"><a href="#contacts" class="menu-link">Contacts</a></li>
+          <li class="menu-item"><a href="#education" class="menu-link">Education</a></li>
+          <li class="menu-item"><a href="#english" class="menu-link">English</a></li>
+          <li class="menu-item"><a href="#experience" class="menu-link">Experience</a></li>
+          <li class="menu-item"><a href="#skills" class="menu-link">Skills</a></li>
+          <li class="menu-item"><a href="#code" class="menu-link">Code</a></li>
+          <li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cover">
+          <div class="hero">
+            <div class="hero-img">
+              <img src="images/ava.jpg" alt="my photo" class="avatar">
+            </div>
+            <h1 class="hero-name">Aliaksei Trunou</h1>
+            <p class="text"><span>Trainee Front-end Developer</span></p>
+          </div>
+
+          <div id="about" class="about">
+            <h2 class="title">About me:</h2>
+            <p class="text">
+              I'd been working as the Head of information department in a trading and e-commerce company for about 8 years, where I was engaged in web-development. As of now, I’ve been an individual entrepreneur for 7 years involved in planning and hosting events and only occasionaly taking up development projects. I’d like to devote myself to development completely and have more location-independent lifestyle that would allow me to be more flexible. I’m also excited about getting back to web development and hope to continue growing in this sphere.
+            </p>
+          </div>
+      </section>
+
+      <section class="content">
+        <div class="content-sidebar">
+          <div id="contacts" class="contacts">
+            <h2 class="title">Contacts info:</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item email">Email:
+                <a href="mailto:trunof@gmail.com" class="contacts-link">trunof@gmail.com</a>
+              </li>
+              <li class="contacts-item telegram">Telegram:
+                <a href="https://t.me/trunou" class="contacts-link" target="_blank">@trunou</a>
+              </li>
+              <li class="contacts-item discord">Discord:
+                <a href="https://discordapp.com/users/" class="contacts-link" target="_blank">@trunou#9153</a>
+              </li>
+              <li class="contacts-item github">GitHub:
+                <a href="https://github.com/trunou" class="contacts-link" target="_blank">trunou</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="education">
+            <h2 class="title">Education:</h2>
+            <p class="text">BSTU, Department of Printing Equipment and Information Processing, 2010</p>
+            <p>Rolling Scopes School 2021Q1:</p>
+              <img src="./images/rss-certificate.jpg" alt="rss-certificate">
+            <p>CodeWars:<img src="https://www.codewars.com/users/trunou/badges/large" alt="" srcset=""></p>
+            
+          </div>
+
+          <div id="skills" class="skills">
+            <h2 class="title">Skills:</h2>
+            <ul class="skills-list">
+              <li class="skills-item">HTML<span class="skills-percent"
+                style="width: calc(100% - 85%);"></span></li>
+              <li class="skills-item">CSS / SCSS<span class="skills-percent"
+                  style="width: calc(100% - 85%);"></span></li>
+              <li class="skills-item">JavaScript<span class="skills-percent"
+                style="width: calc(100% - 65%);"></span></li>
+              <li class="skills-item">Git<span class="skills-percent"
+                style="width: calc(100% - 60%);"></span></li>
+              <li class="skills-item">SQL<span class="skills-percent"
+                style="width: calc(100% - 50%);"></span></li>
+              <li class="skills-item">Figma<span class="skills-percent"
+                style="width: calc(100% - 70%);"></span></li>
+              <li class="skills-item">PhotoShop<span class="skills-percent"
+                style="width: calc(100% - 70%);"></span></li>
+              <li class="skills-item">Illustrator<span class="skills-percent"
+                  style="width: calc(100% - 70%);"></span></li>
+            </ul>
+          </div>
+
+          <div id="english" class="english">
+            <h2 class="title">English:</h2>
+            <p class="text"><span>B1</span> (Intermediate)</p>
+          </div>
+        </div>
+
+        <div class="content-center">
+          <div id="experience" class="experience">
+            <h2 class="title">Experience:</h2>
+            <ul class="experience-list">
+              <li class="experience-item">
+                <p class="years">2008 - 2016</p>
+                <p class="text"><span>Head of information department</span> at "Ludus LLC"<br/>(Belconsole.by / Levelup.by)</p>
+              </li>
+              <li class="experience-item">
+                <p class="years">2015 - Present</p>
+                <p class="text"><span>Franchisee Mozgo</span> as Individual entrepreneur</p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="code" class="code">
+            <h2 class="title">Code example:</h2>
+            <pre class="listing"><code class="code-js">
+// write the function isAnagram
+const isAnagram = function(test, original) {
+  const refactor = (x) => {
+    return x.toLowerCase()
+          .split('')
+          .sort()
+          .join('');
+  }
+  return refactor(test) === refactor(original);
+}
+
+//Duplicate Encoder
+function duplicateEncode(word){
+  let newstr = '';
+  word = word.toLowerCase();
+  for(let i = 0; i < word.length; i++){
+    if (word.indexOf(word[i]) === word.lastIndexOf(word[i])){
+    newstr += '('
+    } else newstr+= ")";
+  }
+return newstr;
+}</code></pre>
+          </div>
+
+          <div id="projects" class="projects">
+            <h2 class="title">Study Projects:</h2>
+            <ul class="projects-list">
+              <li class="projects-item project"><a class="projects-link" href="https://rolling-scopes-school.github.io/trunou-JSFE2021Q1/online-zoo/pages/landing/index.html" target="_blank">Online Zoo</a></li>
+              <li class="projects-item project"><a class="projects-link" href="https://rolling-scopes-school.github.io/trunou-JSFE2021Q1/english-for-kids-base/#main" target="_blank">English for kids</a></li>
+              <li class="projects-item project"><a class="projects-link" href="https://rolling-scopes-school.github.io/trunou-JSFE2022Q1/shelter/pages/main/index.html" target="_blank">Shelter</a></li>
+              <li class="projects-item project"><a class="projects-link" href="https://rolling-scopes-school.github.io/trunou-JSFE2021Q1/virtual-piano/" target="_blank">Virtual Piano</a></li>
+              <li class="projects-item project"><a class="projects-link" href="https://rolling-scopes-school.github.io/trunou-JSFE2021Q1/match-match-game/#about" target="_blank">Match-match game</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copy">&#169; 2022 <a href="https://github.com/trunou" class="copy-link" target="_blank">trunou</a></p>
+        <a href="https://rs.school/js/" class="logo-link" target="_blank">
+          <img src="images/logo-rss.svg" alt="logo rsschool" class="logo-img" width="70" height="24">
+        </a>
+    </footer>
+  </div>
+</body>
+</html>
