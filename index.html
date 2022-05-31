@@ -124,7 +124,10 @@
 // write the function isAnagram
 const isAnagram = function(test, original) {
   const refactor = (x) => {
-    return x.toLowerCase().split('').sort().join('');
+    return x.toLowerCase()
+          .split('')
+          .sort()
+          .join('');
   }
   return refactor(test) === refactor(original);
 }
